@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1300" viewBox="0 0 1500 1300"><defs><marker id="filled" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,1 L11,6 L0,11 Z" fill="#1a1a1a"/></marker><marker id="filleds" viewBox="0 0 12 12" refX="1" refY="6" markerWidth="12" markerHeight="12" orient="auto"><path d="M12,1 L1,6 L12,11 Z" fill="#1a1a1a"/></marker><marker id="open" viewBox="0 0 14 14" refX="13" refY="7" markerWidth="14" markerHeight="14" orient="auto"><path d="M1,1 L13,7 L1,13" fill="none" stroke="#1a1a1a" stroke-width="1.6"/></marker><marker id="tri" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto"><path d="M1,2 L19,10 L1,18 Z" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/></marker></defs><rect width="100%" height="100%" fill="#fff"/><rect x="300" y="30" width="1180" height="1250" rx="0" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="890" y="72.0" font-family="Times New Roman" font-size="28" text-anchor="middle" dominant-baseline="middle" font-weight="bold" fill="#1a1a1a">ИС «Книжный магазин»</text>
+<circle cx="130" cy="158" r="18" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M130,176 L130,230" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M98,194 L162,194" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M102,270 L130,230 L158,270" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<text x="130" y="296.0" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Гость</text>
+<circle cx="130" cy="448" r="18" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M130,466 L130,520" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M98,484 L162,484" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M102,560 L130,520 L158,560" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<text x="130" y="586.0" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Покупатель</text>
+<circle cx="130" cy="758" r="18" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M130,776 L130,830" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M98,794 L162,794" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M102,870 L130,830 L158,870" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<text x="130" y="896.0" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Продавец</text>
+<circle cx="130" cy="1058" r="18" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M130,1076 L130,1130" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M98,1094 L162,1094" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M102,1170 L130,1130 L158,1170" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<text x="130" y="1196.0" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Администратор</text>
+<path d="M130,426 L130,312" fill="none" stroke="#1a1a1a" stroke-width="2" marker-end="url(#tri)"/>
+<path d="M130,736 L130,602" fill="none" stroke="#1a1a1a" stroke-width="2" marker-end="url(#tri)"/>
+<path d="M130,1036 L130,912" fill="none" stroke="#1a1a1a" stroke-width="2" marker-end="url(#tri)"/>
+<ellipse cx="620" cy="140" rx="195" ry="40" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="620" y="140.0" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Просмотр каталога книг</text>
+<ellipse cx="620" cy="230" rx="195" ry="40" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="620" y="216.2" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Поиск, фильтрация</text>
+<text x="620" y="243.79999999999998" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">и сортировка</text>
+<ellipse cx="620" cy="320" rx="195" ry="40" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="620" y="320.0" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Вход в систему</text>
+<ellipse cx="620" cy="425" rx="195" ry="40" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="620" y="425.0" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Просмотр карточки книги</text>
+<ellipse cx="620" cy="520" rx="195" ry="40" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="620" y="520.0" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Оформление заказа</text>
+<ellipse cx="620" cy="645" rx="195" ry="40" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="620" y="645.0" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Выбор покупателя</text>
+<ellipse cx="620" cy="735" rx="195" ry="40" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="620" y="735.0" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Просмотр списка заказов</text>
+<ellipse cx="620" cy="825" rx="195" ry="40" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="620" y="825.0" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Просмотр состава заказа</text>
+<ellipse cx="620" cy="915" rx="195" ry="40" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="620" y="915.0" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Удаление заказа</text>
+<ellipse cx="620" cy="1065" rx="195" ry="40" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="620" y="1065.0" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Изменение даты заказа</text>
+<ellipse cx="620" cy="1155" rx="195" ry="40" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="620" y="1155.0" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Удаление позиции заказа</text>
+<ellipse cx="1250" cy="520" rx="195" ry="40" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="1250" y="506.2" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Проверка остатка</text>
+<text x="1250" y="533.8" font-family="Times New Roman" font-size="23" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">и цены</text>
+<path d="M170,194 L425,140" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M170,194 L425,230" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M170,194 L425,320" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M170,484 L425,425" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M170,484 L425,520" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M170,794 L425,645" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M170,794 L425,735" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M170,794 L425,825" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M170,794 L425,915" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M170,1094 L425,1065" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M170,1094 L425,1155" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M815,520 L1055,520" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="10,7" marker-end="url(#open)"/>
+<text x="935" y="498.0" font-family="Times New Roman" font-size="21" text-anchor="middle" dominant-baseline="middle" font-weight="normal" font-style="italic" fill="#1a1a1a">«include»</text>
+<path d="M620,605 L620,560" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="10,7" marker-end="url(#open)"/>
+<text x="636" y="584.0" font-family="Times New Roman" font-size="21" text-anchor="start" dominant-baseline="middle" font-weight="normal" font-style="italic" fill="#1a1a1a">«extend»</text></svg>

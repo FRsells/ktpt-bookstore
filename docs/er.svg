@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="960" viewBox="0 0 1720 960"><defs><marker id="filled" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,1 L11,6 L0,11 Z" fill="#1a1a1a"/></marker><marker id="filleds" viewBox="0 0 12 12" refX="1" refY="6" markerWidth="12" markerHeight="12" orient="auto"><path d="M12,1 L1,6 L12,11 Z" fill="#1a1a1a"/></marker><marker id="open" viewBox="0 0 14 14" refX="13" refY="7" markerWidth="14" markerHeight="14" orient="auto"><path d="M1,1 L13,7 L1,13" fill="none" stroke="#1a1a1a" stroke-width="1.6"/></marker><marker id="tri" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto"><path d="M1,2 L19,10 L1,18 Z" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/></marker></defs><rect width="100%" height="100%" fill="#fff"/><rect x="50" y="30" width="400" height="100" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="50" y="30" width="400" height="36" fill="#e6e6e6" stroke="#1a1a1a" stroke-width="2"/>
+<text x="250.0" y="48.0" font-family="Times New Roman" font-size="22" text-anchor="middle" dominant-baseline="middle" font-weight="bold" fill="#1a1a1a">roles</text>
+<text x="60" y="82.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">PK</text>
+<text x="122" y="82.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">role_id</text>
+<text x="440" y="82.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<text x="60" y="114.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">UQ</text>
+<text x="122" y="114.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">role_name</text>
+<text x="440" y="114.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">nvarchar(50)</text>
+<rect x="50" y="180" width="400" height="228" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="50" y="180" width="400" height="36" fill="#e6e6e6" stroke="#1a1a1a" stroke-width="2"/>
+<text x="250.0" y="198.0" font-family="Times New Roman" font-size="22" text-anchor="middle" dominant-baseline="middle" font-weight="bold" fill="#1a1a1a">users</text>
+<text x="60" y="232.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">PK</text>
+<text x="122" y="232.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">user_id</text>
+<text x="440" y="232.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<text x="60" y="264.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">UQ</text>
+<text x="122" y="264.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">login</text>
+<text x="440" y="264.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">nvarchar(50)</text>
+<text x="60" y="296.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a"></text>
+<text x="122" y="296.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">last_name</text>
+<text x="440" y="296.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">nvarchar(60)</text>
+<text x="60" y="328.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a"></text>
+<text x="122" y="328.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">first_name</text>
+<text x="440" y="328.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">nvarchar(60)</text>
+<text x="60" y="360.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a"></text>
+<text x="122" y="360.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">middle_name</text>
+<text x="440" y="360.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">nvarchar(60)</text>
+<text x="60" y="392.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">FK</text>
+<text x="122" y="392.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">role_id</text>
+<text x="440" y="392.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<rect x="50" y="470" width="400" height="132" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="50" y="470" width="400" height="36" fill="#e6e6e6" stroke="#1a1a1a" stroke-width="2"/>
+<text x="250.0" y="488.0" font-family="Times New Roman" font-size="22" text-anchor="middle" dominant-baseline="middle" font-weight="bold" fill="#1a1a1a">orders</text>
+<text x="60" y="522.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">PK</text>
+<text x="122" y="522.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">order_id</text>
+<text x="440" y="522.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<text x="60" y="554.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a"></text>
+<text x="122" y="554.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">order_date</text>
+<text x="440" y="554.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">date</text>
+<text x="60" y="586.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">FK</text>
+<text x="122" y="586.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">client_id</text>
+<text x="440" y="586.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<rect x="50" y="660" width="400" height="196" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="50" y="660" width="400" height="36" fill="#e6e6e6" stroke="#1a1a1a" stroke-width="2"/>
+<text x="250.0" y="678.0" font-family="Times New Roman" font-size="22" text-anchor="middle" dominant-baseline="middle" font-weight="bold" fill="#1a1a1a">order_items</text>
+<text x="60" y="712.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">PK</text>
+<text x="122" y="712.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">order_item_id</text>
+<text x="440" y="712.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<text x="60" y="744.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">FK</text>
+<text x="122" y="744.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">order_id</text>
+<text x="440" y="744.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<text x="60" y="776.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">FK</text>
+<text x="122" y="776.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">book_id</text>
+<text x="440" y="776.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<text x="60" y="808.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a"></text>
+<text x="122" y="808.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">quantity</text>
+<text x="440" y="808.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<text x="60" y="840.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a"></text>
+<text x="122" y="840.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">unit_price</text>
+<text x="440" y="840.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">decimal(10,2)</text>
+<rect x="660" y="200" width="400" height="356" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="660" y="200" width="400" height="36" fill="#e6e6e6" stroke="#1a1a1a" stroke-width="2"/>
+<text x="860.0" y="218.0" font-family="Times New Roman" font-size="22" text-anchor="middle" dominant-baseline="middle" font-weight="bold" fill="#1a1a1a">books</text>
+<text x="670" y="252.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">PK</text>
+<text x="732" y="252.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">book_id</text>
+<text x="1050" y="252.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<text x="670" y="284.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">UQ</text>
+<text x="732" y="284.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">isbn</text>
+<text x="1050" y="284.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">nvarchar(17)</text>
+<text x="670" y="316.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a"></text>
+<text x="732" y="316.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">title</text>
+<text x="1050" y="316.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">nvarchar(200)</text>
+<text x="670" y="348.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">FK</text>
+<text x="732" y="348.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">genre_id</text>
+<text x="1050" y="348.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<text x="670" y="380.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">FK</text>
+<text x="732" y="380.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">publisher_id</text>
+<text x="1050" y="380.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<text x="670" y="412.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a"></text>
+<text x="732" y="412.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">publication_year</text>
+<text x="1050" y="412.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">smallint</text>
+<text x="670" y="444.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a"></text>
+<text x="732" y="444.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">description</text>
+<text x="1050" y="444.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">nvarchar(max)</text>
+<text x="670" y="476.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a"></text>
+<text x="732" y="476.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">image_path</text>
+<text x="1050" y="476.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">nvarchar(150)</text>
+<text x="670" y="508.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a"></text>
+<text x="732" y="508.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">base_price</text>
+<text x="1050" y="508.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">decimal(10,2)</text>
+<text x="670" y="540.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a"></text>
+<text x="732" y="540.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">stock_quantity</text>
+<text x="1050" y="540.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<rect x="1270" y="30" width="400" height="100" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="1270" y="30" width="400" height="36" fill="#e6e6e6" stroke="#1a1a1a" stroke-width="2"/>
+<text x="1470.0" y="48.0" font-family="Times New Roman" font-size="22" text-anchor="middle" dominant-baseline="middle" font-weight="bold" fill="#1a1a1a">genres</text>
+<text x="1280" y="82.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">PK</text>
+<text x="1342" y="82.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">genre_id</text>
+<text x="1660" y="82.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<text x="1280" y="114.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">UQ</text>
+<text x="1342" y="114.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">genre_name</text>
+<text x="1660" y="114.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">nvarchar(100)</text>
+<rect x="1270" y="180" width="400" height="100" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="1270" y="180" width="400" height="36" fill="#e6e6e6" stroke="#1a1a1a" stroke-width="2"/>
+<text x="1470.0" y="198.0" font-family="Times New Roman" font-size="22" text-anchor="middle" dominant-baseline="middle" font-weight="bold" fill="#1a1a1a">publishers</text>
+<text x="1280" y="232.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">PK</text>
+<text x="1342" y="232.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">publisher_id</text>
+<text x="1660" y="232.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<text x="1280" y="264.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">UQ</text>
+<text x="1342" y="264.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">publisher_name</text>
+<text x="1660" y="264.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">nvarchar(150)</text>
+<rect x="1270" y="500" width="400" height="164" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="1270" y="500" width="400" height="36" fill="#e6e6e6" stroke="#1a1a1a" stroke-width="2"/>
+<text x="1470.0" y="518.0" font-family="Times New Roman" font-size="22" text-anchor="middle" dominant-baseline="middle" font-weight="bold" fill="#1a1a1a">authors</text>
+<text x="1280" y="552.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">PK</text>
+<text x="1342" y="552.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">author_id</text>
+<text x="1660" y="552.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<text x="1280" y="584.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a"></text>
+<text x="1342" y="584.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">last_name</text>
+<text x="1660" y="584.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">nvarchar(60)</text>
+<text x="1280" y="616.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a"></text>
+<text x="1342" y="616.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">first_name</text>
+<text x="1660" y="616.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">nvarchar(60)</text>
+<text x="1280" y="648.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a"></text>
+<text x="1342" y="648.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">middle_name</text>
+<text x="1660" y="648.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">nvarchar(60)</text>
+<rect x="1270" y="770" width="400" height="100" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="1270" y="770" width="400" height="36" fill="#e6e6e6" stroke="#1a1a1a" stroke-width="2"/>
+<text x="1470.0" y="788.0" font-family="Times New Roman" font-size="22" text-anchor="middle" dominant-baseline="middle" font-weight="bold" fill="#1a1a1a">book_authors</text>
+<text x="1280" y="822.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">PK,FK</text>
+<text x="1342" y="822.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">book_id</text>
+<text x="1660" y="822.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<text x="1280" y="854.0" font-family="Consolas" font-size="17" font-weight="bold" dominant-baseline="middle" fill="#1a1a1a">PK,FK</text>
+<text x="1342" y="854.0" font-family="Consolas" font-size="19" dominant-baseline="middle" fill="#1a1a1a">author_id</text>
+<text x="1660" y="854.0" font-family="Consolas" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">int</text>
+<path d="M50,82.0 L22,82.0 L22,392.0 L50,392.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M42,73.0 L42,91.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M35,73.0 L35,91.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M30,392.0 L50,381.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M30,392.0 L50,392.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M30,392.0 L50,403.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="22" cy="392.0" r="6" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M450,232.0 L500,232.0 L500,586.0 L450,586.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M458,223.0 L458,241.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M465,223.0 L465,241.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M470,586.0 L450,575.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M470,586.0 L450,586.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M470,586.0 L450,597.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="478" cy="586.0" r="6" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M50,522.0 L22,522.0 L22,744.0 L50,744.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M42,513.0 L42,531.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M35,513.0 L35,531.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M30,744.0 L50,733.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M30,744.0 L50,744.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M30,744.0 L50,755.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="22" cy="744.0" r="6" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M660,252.0 L590,252.0 L590,776.0 L450,776.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M652,243.0 L652,261.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M645,243.0 L645,261.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M470,776.0 L450,765.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M470,776.0 L450,776.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M470,776.0 L450,787.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="478" cy="776.0" r="6" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1270,82.0 L1150,82.0 L1150,348.0 L1060,348.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1262,73.0 L1262,91.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1255,73.0 L1255,91.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1080,348.0 L1060,337.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1080,348.0 L1060,348.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1080,348.0 L1060,359.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="1088" cy="348.0" r="6" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1270,232.0 L1195,232.0 L1195,380.0 L1060,380.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1262,223.0 L1262,241.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1255,223.0 L1255,241.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1080,380.0 L1060,369.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1080,380.0 L1060,380.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1080,380.0 L1060,391.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="1088" cy="380.0" r="6" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M860,556 L860,822.0 L1270,822.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M851,564 L869,564" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M851,571 L869,571" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1250,822.0 L1270,811.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1250,822.0 L1270,822.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1250,822.0 L1270,833.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="1242" cy="822.0" r="6" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1670,552.0 L1700,552.0 L1700,854.0 L1670,854.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1678,543.0 L1678,561.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1685,543.0 L1685,561.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1690,854.0 L1670,843.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1690,854.0 L1670,854.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M1690,854.0 L1670,865.0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="1698" cy="854.0" r="6" fill="#fff" stroke="#1a1a1a" stroke-width="2"/></svg>

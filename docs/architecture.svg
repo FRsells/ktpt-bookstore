@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="1380" viewBox="0 0 1300 1380"><defs><marker id="filled" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,1 L11,6 L0,11 Z" fill="#1a1a1a"/></marker><marker id="filleds" viewBox="0 0 12 12" refX="1" refY="6" markerWidth="12" markerHeight="12" orient="auto"><path d="M12,1 L1,6 L12,11 Z" fill="#1a1a1a"/></marker><marker id="open" viewBox="0 0 14 14" refX="13" refY="7" markerWidth="14" markerHeight="14" orient="auto"><path d="M1,1 L13,7 L1,13" fill="none" stroke="#1a1a1a" stroke-width="1.6"/></marker><marker id="tri" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" orient="auto"><path d="M1,2 L19,10 L1,18 Z" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/></marker></defs><rect width="100%" height="100%" fill="#fff"/><rect x="80" y="60" width="760" height="170" rx="0" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="460.0" y="100.0" font-family="Times New Roman" font-size="30" text-anchor="middle" dominant-baseline="middle" font-weight="bold" fill="#1a1a1a">Слой представления (Views)</text>
+<text x="460.0" y="146.4" font-family="Times New Roman" font-size="26" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">MainWindow, LoginView, CatalogView,</text>
+<text x="460.0" y="177.6" font-family="Times New Roman" font-size="26" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">BookView, OrdersView, OrderDetailsView</text>
+<rect x="80" y="420" width="760" height="160" rx="0" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="460.0" y="460.0" font-family="Times New Roman" font-size="30" text-anchor="middle" dominant-baseline="middle" font-weight="bold" fill="#1a1a1a">Слой сервисов (Services)</text>
+<text x="460.0" y="520.0" font-family="Times New Roman" font-size="26" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Session, PriceRules, CatalogService, OrderService</text>
+<rect x="80" y="780" width="760" height="160" rx="0" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="460.0" y="820.0" font-family="Times New Roman" font-size="30" text-anchor="middle" dominant-baseline="middle" font-weight="bold" fill="#1a1a1a">Слой доступа к данным (Data, Models)</text>
+<text x="460.0" y="866.4" font-family="Times New Roman" font-size="26" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">Db, BookstoreContext (EF Core),</text>
+<text x="460.0" y="897.6" font-family="Times New Roman" font-size="26" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">классы-модели таблиц</text>
+<path d="M230,1164 A230.0,24 0 0 1 690,1164 L690,1306 A230.0,24 0 0 1 230,1306 Z" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M230,1164 A230.0,24 0 0 0 690,1164" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<text x="460" y="1210.0" font-family="Times New Roman" font-size="30" text-anchor="middle" dominant-baseline="middle" font-weight="bold" fill="#1a1a1a">SQL Server 2025</text>
+<text x="460" y="1256.0" font-family="Times New Roman" font-size="26" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">база данных bookstore</text>
+<rect x="1000" y="800" width="240" height="120" rx="0" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="1120" y="860.0" font-family="Times New Roman" font-size="28" text-anchor="middle" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">connection.txt</text>
+<path d="M460,230 L460,420" fill="none" stroke="#1a1a1a" stroke-width="2" marker-end="url(#filled)" marker-start="url(#filleds)"/>
+<path d="M460,580 L460,780" fill="none" stroke="#1a1a1a" stroke-width="2" marker-end="url(#filled)" marker-start="url(#filleds)"/>
+<path d="M460,940 L460,1140" fill="none" stroke="#1a1a1a" stroke-width="2" marker-end="url(#filled)" marker-start="url(#filleds)"/>
+<path d="M1000,860 L840,860" fill="none" stroke="#1a1a1a" stroke-width="2" marker-end="url(#filled)"/>
+<text x="480" y="325.0" font-family="Times New Roman" font-size="26" text-anchor="start" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">вызов метода / результат или ошибка</text>
+<text x="480" y="680.0" font-family="Times New Roman" font-size="26" text-anchor="start" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">запросы LINQ / объекты моделей</text>
+<text x="480" y="1040.0" font-family="Times New Roman" font-size="26" text-anchor="start" dominant-baseline="middle" font-weight="normal" fill="#1a1a1a">SQL-запросы / строки таблиц</text></svg>

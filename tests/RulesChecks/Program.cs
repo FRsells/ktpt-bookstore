@@ -108,6 +108,24 @@ using (var db = Db.Create())
     Check("Исходные данные восстановлены", await db.Orders.CountAsync() == startOrders);
 }
 
+// Замер: те же запросы, что выполняет каталог (книги со связями + цена каждой книги).
+Console.WriteLine();
+Console.WriteLine("=== 3. Замер загрузки данных каталога ===");
+long worst = 0;
+for (int run = 1; run <= 5; run++)
+{
+    var sw = System.Diagnostics.Stopwatch.StartNew();
+    using var db = Db.Create();
+    var books = await db.Books.Include(b => b.Genre).Include(b => b.Publisher).Include(b => b.Authors)
+        .AsNoTracking().ToListAsync();
+    foreach (var b in books)
+        await CatalogService.GetPriceAsync(db, b);
+    sw.Stop();
+    if (run > 1) worst = Math.Max(worst, sw.ElapsedMilliseconds); // 1-й запуск — прогрев
+    Console.WriteLine($"Запуск {run}: {books.Count} книг, {sw.ElapsedMilliseconds} мс");
+}
+Check("Загрузка данных каталога не дольше 1 с (без первого запуска)", worst <= 1000, $"максимум {worst} мс");
+
 Console.WriteLine();
 Console.WriteLine($"Итого: пройдено {passed}, не пройдено {failed}");
 return failed == 0 ? 0 : 1;
