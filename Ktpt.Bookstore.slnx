@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/Ktpt.Bookstore/Ktpt.Bookstore.csproj" />
+  <Project Path="tests/RulesChecks/RulesChecks.csproj" />
+</Solution>
