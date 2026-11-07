@@ -1,0 +1,75 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Ktpt.Bookstore.App"
+             RequestedThemeVariant="Light">
+
+    <!-- РЕСУРСЫ: цвета с именами (x:Key). Формы берут их через {StaticResource Имя}. -->
+    <Application.Resources>
+        <SolidColorBrush x:Key="SurfaceBrush" Color="#E9E2D4" />   <!-- фон шапки -->
+        <SolidColorBrush x:Key="AccentBrush" Color="#8DB3A2" />    <!-- главные кнопки -->
+        <SolidColorBrush x:Key="LowStockBrush" Color="#F2B5AE" />  <!-- мало экземпляров -->
+        <SolidColorBrush x:Key="NormalBrush" Color="#FFFFFF" />    <!-- обычный фон -->
+        <SolidColorBrush x:Key="LineBrush" Color="#CFC6B6" />      <!-- рамки карточек -->
+        <SolidColorBrush x:Key="DiscountBrush" Color="#8E2B23" />  <!-- текст скидки -->
+        <!-- Акцентный цвет темы (выделение строк, рамка поля в фокусе) вместо
+             системного цвета Windows, чтобы оформление не зависело от настроек ПК. -->
+        <Color x:Key="SystemAccentColor">#4E7D6B</Color>
+        <Color x:Key="SystemAccentColorLight1">#6F9A89</Color>
+        <Color x:Key="SystemAccentColorLight2">#A9C6BA</Color>
+        <Color x:Key="SystemAccentColorLight3">#D3E4DC</Color>
+        <Color x:Key="SystemAccentColorDark1">#3F6857</Color>
+        <Color x:Key="SystemAccentColorDark2">#305244</Color>
+        <Color x:Key="SystemAccentColorDark3">#223B31</Color>
+    </Application.Resources>
+
+    <Application.Styles>
+        <FluentTheme />
+
+        <Style Selector="Window">
+            <Setter Property="FontFamily" Value="Calibri" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Background" Value="{StaticResource NormalBrush}" />
+        </Style>
+
+        <!-- Для всех кнопок: внутренний и внешний отступ. -->
+        <Style Selector="Button">
+            <Setter Property="Padding" Value="12,8" />
+            <Setter Property="Margin" Value="3" />
+        </Style>
+
+        <!-- Только для кнопок с Classes="accent": акцентный цвет.
+             Тема Fluent красит такие кнопки системным цветом Windows прямо в шаблоне
+             (элемент PART_ContentPresenter), поэтому цвет задаём этому элементу. -->
+        <Style Selector="Button.accent /template/ ContentPresenter#PART_ContentPresenter">
+            <Setter Property="Background" Value="{StaticResource AccentBrush}" />
+            <Setter Property="Foreground" Value="Black" />
+        </Style>
+        <Style Selector="Button.accent:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+            <Setter Property="Background" Value="#7BA391" />
+            <Setter Property="Foreground" Value="Black" />
+        </Style>
+        <Style Selector="Button.accent:pressed /template/ ContentPresenter#PART_ContentPresenter">
+            <Setter Property="Background" Value="#6A9180" />
+        </Style>
+        <Style Selector="Button.accent:disabled /template/ ContentPresenter#PART_ContentPresenter">
+            <Setter Property="Background" Value="#D9E3DE" />
+            <Setter Property="Foreground" Value="#7A7A7A" />
+        </Style>
+
+        <!-- Строки списков: небольшой внутренний отступ. -->
+        <Style Selector="ListBoxItem">
+            <Setter Property="Padding" Value="6,3" />
+        </Style>
+
+        <!-- Длинный текст переносится на новую строку, а не обрезается. -->
+        <Style Selector="TextBlock">
+            <Setter Property="TextWrapping" Value="Wrap" />
+        </Style>
+
+        <!-- Крупный жирный заголовок страницы. -->
+        <Style Selector="TextBlock.heading">
+            <Setter Property="FontSize" Value="24" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+    </Application.Styles>
+</Application>

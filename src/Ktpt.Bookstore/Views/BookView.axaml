@@ -1,0 +1,43 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Ktpt.Bookstore.Views.BookView"
+             Tag="Карточка книги и оформление заказа">
+
+    <ScrollViewer>
+        <Grid ColumnDefinitions="220,*" MaxWidth="900" HorizontalAlignment="Left">
+            <!-- Слева обложка. -->
+            <Image x:Name="BookImage" Width="200" Height="280" VerticalAlignment="Top"
+                   Stretch="Uniform" />
+
+            <!-- Справа сведения о книге и оформление заказа. -->
+            <StackPanel Grid.Column="1" Spacing="8" Margin="16,0,0,0">
+                <TextBlock x:Name="TitleText" Classes="heading" />
+                <TextBlock x:Name="AuthorsText" />
+                <TextBlock x:Name="InfoText" />
+                <TextBlock x:Name="DescriptionText" />
+                <TextBlock x:Name="BasePriceText" />
+                <TextBlock x:Name="PriceText" FontWeight="Bold" />
+                <TextBlock x:Name="StockText" />
+
+                <TextBlock Text="Количество экземпляров:" />
+                <TextBox x:Name="QuantityBox" Text="1" Width="160" HorizontalAlignment="Left" />
+
+                <!-- Выбор покупателя: панель видна только продавцу и администратору. -->
+                <StackPanel x:Name="ClientPanel" Spacing="6">
+                    <TextBlock Text="Покупатель, для которого оформляется заказ:" />
+                    <ComboBox x:Name="ClientBox" MinWidth="450" PlaceholderText="Выберите покупателя" />
+                </StackPanel>
+
+                <TextBlock Text="Заказ сохранится только после нажатия «Оформить заказ»." />
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="SaveButton" Content="Оформить заказ" Classes="accent"
+                            Click="SaveClick" />
+                    <Button Content="Обновить карточку" Click="ReloadClick" />
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

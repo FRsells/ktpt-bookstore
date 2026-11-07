@@ -1,0 +1,47 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Ktpt.Bookstore.Views.OrderDetailsView"
+             Tag="Состав заказа">
+
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Spacing="10">
+            <TextBlock x:Name="HeaderText" Classes="heading" />
+            <TextBlock x:Name="ClientText" />
+            <TextBlock x:Name="DateText" />
+            <TextBlock x:Name="TotalText" FontWeight="Bold" />
+
+            <!-- Кнопки для продавца и администратора. -->
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Удалить весь заказ" Click="DeleteOrderClick" />
+                <Button Content="Обновить" Click="ReloadClick" />
+            </StackPanel>
+
+            <!-- Панель администратора: скрывается из C# для остальных ролей. -->
+            <StackPanel x:Name="AdminPanel" Orientation="Horizontal" Spacing="6">
+                <CalendarDatePicker x:Name="DateBox" Width="180" />
+                <Button Content="Сохранить дату" Click="SaveDateClick" />
+                <Button Content="Удалить выбранную позицию" Click="DeleteItemClick" />
+            </StackPanel>
+
+            <!-- Подтверждение удаления. Сначала скрыто. -->
+            <Border x:Name="ConfirmPanel" IsVisible="False" Padding="10"
+                    Background="{StaticResource LowStockBrush}">
+                <StackPanel Spacing="6">
+                    <TextBlock x:Name="ConfirmText" />
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Да, удалить" Click="ConfirmClick" />
+                        <Button Content="Отмена" Click="CancelClick" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <TextBlock Text="Позиции заказа:" />
+        </StackPanel>
+
+        <!-- Позиции показываются текстом из OrderItem.ToString() (ModelExtras.cs). -->
+        <ListBox x:Name="ItemsList" />
+    </DockPanel>
+</UserControl>

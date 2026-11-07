@@ -1,0 +1,60 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Ktpt.Bookstore.Views.CatalogView"
+             Tag="Каталог книг">
+
+    <DockPanel>
+        <!-- Верхняя часть: заголовок, поиск, жанр, сортировка, счётчик. -->
+        <StackPanel DockPanel.Dock="Top" Spacing="8">
+            <TextBlock Classes="heading" Text="Каталог книг" />
+            <TextBox x:Name="SearchBox" PlaceholderText="Поиск по названию, автору или ISBN"
+                     TextChanged="SearchChanged" />
+            <Grid ColumnDefinitions="*,250,Auto" Margin="0,0,0,8">
+                <ComboBox x:Name="GenreBox" HorizontalAlignment="Stretch"
+                          SelectionChanged="FilterChanged" />
+                <ComboBox x:Name="SortBox" Grid.Column="1" HorizontalAlignment="Stretch"
+                          SelectionChanged="FilterChanged">
+                    <ComboBoxItem Content="Цена по возрастанию" />
+                    <ComboBoxItem Content="Цена по убыванию" />
+                </ComboBox>
+                <Button Grid.Column="2" Content="Обновить" Click="ReloadClick" />
+            </Grid>
+            <TextBlock x:Name="CountText" />
+        </StackPanel>
+
+        <!-- Список карточек. ItemsSource заполняется из C# объектами BookCard. -->
+        <ListBox x:Name="CardsList" SelectionChanged="CardSelected">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Background="{Binding Background}" Padding="10" Margin="0,2"
+                            BorderBrush="{StaticResource LineBrush}" BorderThickness="1">
+                        <Grid ColumnDefinitions="80,*,190">
+                            <Image Source="{Binding Image}" Width="72" Height="100"
+                                   Stretch="Uniform" />
+                            <StackPanel Grid.Column="1" Spacing="2" Margin="12,0"
+                                        VerticalAlignment="Center">
+                                <TextBlock Text="{Binding Title}" FontWeight="Bold" FontSize="18" />
+                                <TextBlock Text="{Binding Authors}" />
+                                <StackPanel Orientation="Horizontal" Spacing="6">
+                                    <TextBlock Text="{Binding Genre}" />
+                                    <TextBlock Text="·" />
+                                    <TextBlock Text="{Binding Publisher}" />
+                                </StackPanel>
+                                <TextBlock Text="{Binding StockText}" />
+                            </StackPanel>
+                            <StackPanel Grid.Column="2" Spacing="2" VerticalAlignment="Center">
+                                <TextBlock Text="{Binding BasePriceText}" FontSize="14" />
+                                <TextBlock Text="{Binding PriceText}" FontWeight="Bold" FontSize="18" />
+                                <TextBlock Text="{Binding DiscountText}"
+                                           Foreground="{StaticResource DiscountBrush}" />
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </DockPanel>
+</UserControl>

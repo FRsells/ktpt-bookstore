@@ -1,0 +1,39 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Ktpt.Bookstore.Views.MainWindow"
+        Title="Книжный магазин"
+        Width="1120" Height="760" MinWidth="850" MinHeight="600"
+        Icon="avares://Ktpt.Bookstore/Assets/app.ico">
+
+    <!-- DockPanel: верхние элементы встают друг под другом,
+         последний элемент (PageHost) занимает всё оставшееся место. -->
+    <DockPanel>
+        <!-- 1. Шапка: логотип слева, ФИО и роль пользователя справа. -->
+        <Border DockPanel.Dock="Top" Padding="16"
+                Background="{StaticResource SurfaceBrush}">
+            <Grid ColumnDefinitions="Auto,*,Auto">
+                <Image Source="avares://Ktpt.Bookstore/Assets/logo.png"
+                       Width="250" Height="56" Stretch="Uniform" />
+                <TextBlock x:Name="UserText" Grid.Column="2"
+                           VerticalAlignment="Center" MaxWidth="480" />
+            </Grid>
+        </Border>
+
+        <!-- 2. Кнопки навигации. -->
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="12,6">
+            <Button x:Name="BackButton" Content="Назад" Click="BackClick" />
+            <Button Content="Каталог" Click="CatalogClick" />
+            <Button x:Name="OrdersButton" Content="Заказы" Click="OrdersClick" />
+            <Button Content="Сменить пользователя" Click="LogoutClick" />
+        </StackPanel>
+
+        <!-- 3. Строка сообщений: ошибки и подтверждения. -->
+        <TextBlock x:Name="MessageText" DockPanel.Dock="Top" Margin="16,4" />
+
+        <!-- 4. Место, куда подставляется текущая страница. -->
+        <ContentControl x:Name="PageHost" Margin="16" />
+    </DockPanel>
+</Window>
